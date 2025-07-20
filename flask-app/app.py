@@ -42,4 +42,4 @@ def get_attendance():
 if __name__ == '__main__':
     # In a production environment, use a production-ready WSGI server like Gunicorn or uWSGI
     # For development:
-    app.run(debug=True, port=5000)
+    app.run(host="0.0.0.0", port=5000)
