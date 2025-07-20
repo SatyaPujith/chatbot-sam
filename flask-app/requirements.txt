@@ -1,4 +1,4 @@
 Flask
 gunicorn
 python-dotenv
-playwright
+playwright==1.44.0  # or the latest stable version
