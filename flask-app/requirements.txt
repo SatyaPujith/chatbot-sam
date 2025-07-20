@@ -1,5 +1,5 @@
-
 Flask
+gunicorn
 selenium
-webdriver-manager # To automatically manage chromedriver
+webdriver-manager
 python-dotenv
