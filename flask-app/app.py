@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify, render_template
-from backend_scraper import get_attendance_summary_selenium
+# from backend_scraper import get_attendance_summary_selenium
+from backend_scraper import get_attendance_summary_playwright as get_attendance_summary_selenium
+
 from dotenv import load_dotenv
 import os
 
