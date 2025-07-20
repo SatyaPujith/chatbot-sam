@@ -3,10 +3,8 @@ services:
     name: flask-attendance-bot
     env: python
     buildCommand: |
-      apt-get update && apt-get install -y wget gnupg unzip
-      wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-      apt-get install -y ./google-chrome-stable_current_amd64.deb
       pip install -r requirements.txt
+      playwright install chromium
     startCommand: gunicorn app:app
       - key: FLASK_SECRET_KEY
         value: 1eb0c015b58d047e7d192cc716285064d1ca5c1bd8f9223d33523bb7f0b1d8eb
